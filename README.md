@@ -44,4 +44,15 @@ It doesn't causes small derivative.
  <img src="https://github.com/vedantgoswami/Vanishing-Gradient-Problem/blob/main/Images/derivative.png" width="48%">
   </p>
   
+### For ReLU
+<b>Weights before Training: </b><br>
+[-0.7054342 ,  0.55165845, -0.44873548, -0.62863475,  0.61142164, -0.4026693 ,  0.4864213 , -0.48546308,  0.32516545,  0.49556655]
+
+<b>Weights after 1st Epoch: </b><br>
+[ 0.53107524,  0.12173636,  0.5073124 ,  0.54416114, -0.19135918,-0.08547983, 0.56848377,  0.44454524, -0.6231898 ,  0.0601779 ]
+
+<b>Change in Weight</b><br>
+[  3.5640223,   5.7049985, -10.301827 ,   8.888125 ,  -7.2175856, -6.165191 ,  -9.538114 ,   3.937869 ,  -5.6343074,   5.639493 ]
+Here is the significant change in weight of the model using ReLU activation function.
+
   
