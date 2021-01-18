@@ -27,3 +27,21 @@ Lets Concentrate on the first layer of the model
 
 <b>Change in Weight</b><br>
 [-0.00113249, -0.00108778, -0.00292063, -0.00071526, -0.00165403,-0.00002235, -0.00202656, -0.00181794,  0.00232458, -0.00081211]
+
+As you can see that change in weight is very low, means that the weights and biases of the initial layers will not be updated effectively with each training session.
+This can lead to overall inaccuracy of model.<br><br>
+
+### One solution is Restricted Input:
+Batch normalization reduces this problem by simply normalizing the input so |x| doesn’t reach the outer edges of the sigmoid function, it normalizes the input so that most of it falls in the green region, where the derivative isn’t too small.
+
+<p align="center">
+<img src="https://github.com/vedantgoswami/Vanishing-Gradient-Problem/blob/main/Images/restricted_input.png">
+</p>
+
+### Simplest solution is ReLU Activation:
+It doesn't causes small derivative.
+<p align="center">
+ <img src="https://github.com/vedantgoswami/Vanishing-Gradient-Problem/blob/main/Images/derivative.png" width="48%">
+  </p>
+  
+  
